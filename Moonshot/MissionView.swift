@@ -31,11 +31,13 @@ struct MissionView: View {
                         .font(.system(size: 10))
                     
                     Text(mission.formattedLaunchDate)
-//                        .foregroundColor(.gray)
                         .bold()
-                        .padding(.bottom)
                     
                     VStack(alignment: .leading) {
+                        Rectangle()
+                            .frame(height: 2)
+                            .foregroundColor(.lightBackground)
+                        
                         Text("Mission Highlights")
                             .font(.title.bold())
                             .padding(.bottom, 5)
