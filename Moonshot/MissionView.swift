@@ -26,6 +26,15 @@ struct MissionView: View {
                         .frame(maxWidth: geometry.size.width * 0.6)
                         .padding(.top)
                     
+                    Text("LAUNCH DATE")
+                        .bold()
+                        .font(.system(size: 10))
+                    
+                    Text(mission.formattedLaunchDate)
+//                        .foregroundColor(.gray)
+                        .bold()
+                        .padding(.bottom)
+                    
                     VStack(alignment: .leading) {
                         Text("Mission Highlights")
                             .font(.title.bold())
